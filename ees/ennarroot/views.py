@@ -61,7 +61,7 @@ def productUpload(request):
         return HttpResponseRedirect(reverse('ennarroot:home'))
 
 def uploadForm(request):
-    return render(request,'productupload.html',context=None)
+    return render(request,'product.html',context=None)
 
 def toUpper(name):
      index=0
