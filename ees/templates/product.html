@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Sign Up Form by Colorlib</title>
 
     <!-- Font Icon -->
@@ -21,89 +23,62 @@
         <div class="container">
             <div class="signup-content">
                 <div class="signup-img">
-                    <img src="{% static "ennarroot/product/images/signup-img.jpg"%}" alt="">
+                    <img src="{% static "ennarroot/product/images/Untitled-1.jpg"%}" alt="">
                 </div>
                 <div class="signup-form">
                     <form method="POST" class="register-form" id="register-form">
-                        <h2>student registration form</h2>
+                        <h2>UPLOAD PRODUCT</h2>
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="name">Name :</label>
-                                <input type="text" name="name" id="name" required/>
+                                <label for="name">Product Name</label>
+                                <input type="text" name="product_name" id="product_name" required/>
                             </div>
                             <div class="form-group">
-                                <label for="father_name">Father Name :</label>
-                                <input type="text" name="father_name" id="father_name" required/>
+                                <label for="father_name">Capacity</label>
+                                <input type="text" name="capacity" id="capacity" required/>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="address">Address :</label>
-                            <input type="text" name="address" id="address" required/>
-                        </div>
-                        <div class="form-radio">
-                            <label for="gender" class="radio-label">Gender :</label>
-                            <div class="form-radio-item">
-                                <input type="radio" name="gender" id="male" checked>
-                                <label for="male">Male</label>
-                                <span class="check"></span>
-                            </div>
-                            <div class="form-radio-item">
-                                <input type="radio" name="gender" id="female">
-                                <label for="female">Female</label>
-                                <span class="check"></span>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="state">State :</label>
-                                <div class="form-select">
-                                    <select name="state" id="state">
-                                        <option value=""></option>
-                                        <option value="us">America</option>
-                                        <option value="uk">English</option>
-                                    </select>
-                                    <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="city">City :</label>
-                                <div class="form-select">
-                                    <select name="city" id="city">
-                                        <option value=""></option>
-                                        <option value="losangeles">Los Angeles</option>
-                                        <option value="washington">Washington</option>
-                                    </select>
-                                    <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
-                                </div>
-                            </div>
+                            <label for="address">Working Pressure</label>
+                            <input type="text" name="working_pressure" id="working_pressure" required/>
                         </div>
                         <div class="form-group">
-                            <label for="birth_date">DOB :</label>
-                            <input type="text" name="birth_date" id="birth_date">
+                          <label for="course">Fuel</label>
+                          <div class="form-select">
+                              <select name="model_series" id="model_series">
+                                  <option value="">--Choose your Fuel--</option>
+                                  <option value="m1">Bagasse</option>
+                                  <option value="m2">Coal</option>
+                                  <option value="m3">Biomass</option>
+                                  <option value="m4">Oil & Gas</option>
+                              </select>
+                              <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                          </div>
+
                         </div>
                         <div class="form-group">
-                            <label for="pincode">Pincode :</label>
-                            <input type="text" name="pincode" id="pincode">
-                        </div>
-                        <div class="form-group">
-                            <label for="course">Course :</label>
+                            <label for="course">Model Series</label>
                             <div class="form-select">
-                                <select name="course" id="course">
-                                    <option value=""></option>
-                                    <option value="computer">Computer Operator & Pragramming Assistant</option>
-                                    <option value="desiger">Designer</option>
-                                    <option value="marketing">Marketing</option>
+                                <select name="model_series" id="model_series">
+                                    <option value="">--Choose your Model--</option>
+                                    <option value="m1">Model-1</option>
+                                    <option value="m2">Model-2</option>
+                                    <option value="m3">Model-3</option>
+                                    <option value="m4">Model-4</option>
+                                    <option value="m5">Model-5</option>
+
                                 </select>
                                 <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
                             </div>
+
                         </div>
-                        <div class="form-group">
-                            <label for="email">Email ID :</label>
-                            <input type="email" name="email" id="email" />
-                        </div>
+                        <label class="file"> Choose File
+                         <input class="w3-btn w3-blue" type="file" size="60" name="image"  >
+                       </label>
+
                         <div class="form-submit">
                             <input type="submit" value="Reset All" class="submit" name="reset" id="reset" />
-                            <input type="submit" value="Submit Form" class="submit" name="submit" id="submit" />
+                            <input type="submit" value="Upload Product" class="submit" name="submit" id="submit" />
                         </div>
                     </form>
                 </div>
