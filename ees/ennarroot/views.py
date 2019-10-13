@@ -26,7 +26,7 @@ def adminLogin(request):
         request.session['user']=username
         return HttpResponseRedirect(reverse('ennarroot:admin_desk'))
 
-
+#admin username :rajamanickam password:manickam@ennaar
 
 def adminDesk(request):
     username = request.session.get('user')
