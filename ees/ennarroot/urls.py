@@ -12,7 +12,9 @@ urlpatterns = [
     path('upload/',views.productUpload,name='upload'),
     path('view_products/',views.viewProducts,name='viewproducts'),
     path('enquiry/',views.enquirey,name='enquiry'),
-    path('save_enq/',views.saveEnquirey,name='save_enq')
+    path('save_enq/',views.saveEnquirey,name='save_enq'),
+    path('contact/',views.contactus,name='contact'),
+    path('<int:product_id>/',views.orderproduct,name='orderproduct')
 
 
 ]

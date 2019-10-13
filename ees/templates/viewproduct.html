@@ -44,14 +44,16 @@
 
 
                 <div class="w3-third w3-container w3-margin-bottom">
-                    <img src="{{product.product_image}}" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                    <img src="{{product.product_image}}" alt="Norway"  width="500px" height="333px" class="w3-hover-opacity">
                     <div class="w3-container w3-white">
                         <h3>{{product.productname}}</h3>
                         <h3>{{product.capacity}}</h3>
                         <h3>{{product.workingpressure}}</h3>
                         <h3>{{product.fuel}}</h3>
                         <h3>{{product.model_series}}</h3>
-                        
+                        <a href="{% url 'ennarroot:orderproduct' product.id %}"></a>
+
+
                     </div>
 
                     {% endfor %}

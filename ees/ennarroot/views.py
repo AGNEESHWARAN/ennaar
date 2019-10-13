@@ -92,6 +92,25 @@ def saveEnquirey(request):
         return HttpResponseRedirect(reverse('ennarroot:home'))
 
 
+def orderproduct(request,product_id):
+    product =Products.objects.get(id=product_id)
+    return render(request,'order.html',context={'product':product})
+
+
+def contactus(request):
+    return render(request,'contact.html',context=None)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 def toUpper(name):
