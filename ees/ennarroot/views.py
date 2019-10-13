@@ -31,8 +31,10 @@ def adminLogin(request):
 def adminDesk(request):
     username = request.session.get('user')
     username=toUpper(username)
+    se=ServiceEnquiry.objects.order_by('-id')
+    my_dict={'enquiries':se,'username':username}
 
-    return render(request,'Admin/Admin.html',context={'username':username})
+    return render(request,'Admin/Admin.html',context=my_dict)
 
 def logout(request):
     del request.session['user']
@@ -89,9 +91,7 @@ def saveEnquirey(request):
         enq.save()
         return HttpResponseRedirect(reverse('ennarroot:home'))
 
-def viewEnquirey(request):
-    se=ServiceEnquiry.objects.latest()
-    my_dict={'enquiries':se}
+
 
 
 def toUpper(name):
