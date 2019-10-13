@@ -48,10 +48,10 @@
                         <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="index.html">Home</a>
+                                    <a class="nav-link" href="">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="feature.html">View Products</a>
+                                    <a class="nav-link" href="{% url 'ennarroot:viewproducts'%}">View Products</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="{% url 'blog:viewblog'%}">Blog</a>
@@ -63,7 +63,7 @@
                                     <a class="nav-link" href="contact.html">Contact</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="Service.html">Service</a>
+                                    <a class="nav-link" href="{% url 'ennarroot:enquiry'%}">Service</a>
                                 </li>
                             </ul>
                         </div>
