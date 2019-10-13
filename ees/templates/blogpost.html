@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html lang="en">
+<head>
+	<title>Postblog</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href=" {% static "blog/bp/images/icons/favicon.ico"%}"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static "blog/bp/vendor/bootstrap/css/bootstrap.min.css"%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static "blog/bp/fonts/font-awesome-4.7.0/css/font-awesome.min.css"%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static "blog/bp/fonts/Linearicons-Free-v1.0.0/icon-font.min.css"%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static "blog/bp/vendor/animate/animate.css"%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static "blog/bp/vendor/css-hamburgers/hamburgers.min.css"%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static "blog/bp/vendor/animsition/css/animsition.min.css"%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static "blog/bp/vendor/select2/select2.min.css"%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static "blog/bp/vendor/daterangepicker/daterangepicker.css"%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href=" {% static "blog/bp/css/util.css"%}">
+	<link rel="stylesheet" type="text/css" href=" {% static "blog/bp/css/main.css"%}">
+<!--===============================================================================================-->
+</head>
+<body>
+
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form" action="{%url 'blog:postblog'%}" enctype="multipart/form-data" method='POST'>
+				{% csrf_token %}
+				<span class="contact100-form-title">
+					POST BLOGS
+				</span>
+
+				<label class="label-input100" for="phone"><b>Topic</b></label>
+				<div class="wrap-input100">
+					<input id="topic" class="input100" type="text" name="topic" placeholder="Write your Topic">
+					<span class="focus-input100"></span>
+				</div>
+
+
+				<label class="label-input100" for="message"><b>Message *</b></label>
+				<div class="wrap-input100 validate-input" data-validate = "Message is required">
+					<textarea id="blog" class="input100" name="blog" placeholder="Write Here"></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+
+					<label class="file"> Choose File
+						<input type="file" size="60" name="image"  >
+					</label>
+
+
+				</div>
+				<div class="container-contact100-form-btn"><br><br>
+					
+
+				<input class="contact100-form-btn" type="submit" name="submit" value="submit">
+
+
+			</div>
+
+			<div class="container-contact100-form-btn">
+<button onclick="redirect()">Delete Post</button>
+
+					
+
+				</div>
+			</form>
+
+			<div>
+					<img src="{% static "ennarroot/img/send.gif"%} " style="width:560px;height:720px";>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src=" {% static "blog/bp/vendor/jquery/jquery-3.2.1.min.js"%}"></script>
+<!--===============================================================================================-->
+	<script src=" {% static "blog/bp/vendor/animsition/js/animsition.min.js"%}"></script>
+<!--===============================================================================================-->
+	<script src=" {% static "blog/bp/vendor/bootstrap/js/popper.js"%}"></script>
+	<script src=" {% static "blog/bp/vendor/bootstrap/js/bootstrap.min.js"%}"></script>
+<!--===============================================================================================-->
+	<script src="{% static "blog/bp/vendor/select2/select2.min.js"%}"></script>
+	<script>
+	function redirect() {
+  location.replace("{% url 'blog:delete'%}")
+    }
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src=" {% static "blog/bp/vendor/daterangepicker/moment.min.js"%}"></script>
+	<script src=" {% static "blog/bp/vendor/daterangepicker/daterangepicker.js"%}"></script>
+<!--===============================================================================================-->
+	<script src="{% static "blog/bp/vendor/countdowntime/countdowntime.js"%}"></script>
+<!--===============================================================================================-->
+	<script src=" {% static "blog/bp/js/main.js"%}"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src=" {% static "https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"%}"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
+</body>
+<style>
+
+.file{
+  padding: 10px;
+  background: rgb(195, 0, 255);
+  display: table;
+  color: #fff;
+   }
+
+
+
+input[type="file"] {
+  display: none;
+}
+</style>
+</html>
