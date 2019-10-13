@@ -117,16 +117,7 @@
             <div class="row align-items-center justify-content-between">
                 <div class="col-lg-6 ">
                     <div class="row align-items-center">
-                        <a href=""><div class="col-lg-6 col-sm-6">
-                            <div class="single_feature">
-                                    <img src="{% static "ennarroot/img/legalario-dribbble.gif"%}" height="" alt="">
 
-                                <div class="single_feature_part">
-                                        <h4 style="text-align: center">Mail to us</h4>
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div></a>
                         <div class="col-lg-6 col-sm-6">
                             <div class="single_feature">
                                     <img src="{% static "ennarroot\img\icn_gallery.gif"%}">
@@ -149,32 +140,19 @@
                     <div class="feature_part_text">
                         <h2>Avalable Boilers</h2>
 
-                               <h3> <a class="nav-link" href="blog.html">Travelling Grate boilers</a></h3>
-                               <h3> <a class="nav-link" href="blog.html">Fluidised combustion boilers (FBC)</a></h3>
-                               <h3> <a class="nav-link" href="blog.html">Oil & Gas fired boilers</a></h3>
-                               <h3> <a class="nav-link" href="blog.html">Heat Recovery Steam Generators</a></h3>
-                               <h3> <a class="nav-link" href="blog.html">Smoke Tube boilers</a></h3>
+                               <h3> <a class="nav-link" href="{% url 'ennarroot:viewproducts'%}">Travelling Grate boilers</a></h3>
+                               <h3> <a class="nav-link" href="{% url 'ennarroot:viewproducts'%}">Fluidised combustion boilers (FBC)</a></h3>
+                               <h3> <a class="nav-link" href="{% url 'ennarroot:viewproducts'%}">Oil & Gas fired boilers</a></h3>
+                               <h3> <a class="nav-link" href="{% url 'ennarroot:viewproducts'%}">Heat Recovery Steam Generators</a></h3>
+                               <h3> <a class="nav-link" href="{% url 'ennarroot:viewproducts'%}">Smoke Tube boilers</a></h3>
 
                         <h2>Fuels Capable</h2>
-                        <h3> <a class="nav-link" href="blog.html">Bagasse</a></h3>
-                        <h3> <a class="nav-link" href="blog.html">Coal </a></h3>
-                        <h3> <a class="nav-link" href="blog.html">Biomass</a></h3>
-                        <h3> <a class="nav-link" href="">Oil & gas </a></h3>
+                        <h3> <a class="nav-link" href="{% url 'ennarroot:viewproducts'%}">Bagasse</a></h3>
+                        <h3> <a class="nav-link" href="{% url 'ennarroot:viewproducts'%}">Coal </a></h3>
+                        <h3> <a class="nav-link" href="{% url 'ennarroot:viewproducts'%}">Biomass</a></h3>
+                        <h3> <a class="nav-link" href="{% url 'ennarroot:viewproducts'%}">Oil & gas </a></h3>
 
-                        <div class="row">
-                            <div class="col-sm-6 col-md-4 col-lg-5">
-                                <div class="feature_part_text_iner">
-                                    <h4>50k</h4>
-                                    <p>Total Volunteer</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-4 col-lg-5">
-                                <div class="feature_part_text_iner">
-                                    <h4>100k</h4>
-                                    <p>Successed Mission</p>
-                                </div>
-                            </div>
-                        </div>
+
                         <a href="#" class="btn_4">learn more <img src="{% static "ennarroot/img/icon/right-arrow.svg"%}" alt=""></a>
                     </div>
                 </div>
@@ -200,8 +178,7 @@
                     <div class="about_us_text">
                         <h3>Management of Ennaar Energy Systems</h3>
                             <h5> We are supplied for various types of industrials like textiles, paper, chemical, activated Carbon, food, Rice Mills, Herbals, Oil refineries, Tannery, Hotels and Paramedical suites the exact demands of our estimated customers.</h5>
-                        <a href="#" class="btn_1">get started</a>
-                        <a href="#" class="btn_2">sing up free</a>
+
                     </div>
 
                 </div>
@@ -335,199 +312,8 @@
     <!-- use sasu part end-->
 
     <!-- about_us part start-->
-    <section class="about_us right_time section_padding">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md-6 col-lg-6">
-                    <div class="learning_img">
-                        <img src="img/about_img_1.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-5">
-                    <div class="about_us_text">
-                        <h2>Easy to Use
-                            Mobile Application</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua. Ut enim ad minim</p>
-                        <a href="#" class="btn_1">get started</a>
-                        <a href="#" class="btn_2">sing up free</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="img/about_shape.png" alt="" class="about_shape_1">
-        <img src="img/animate_icon/Shape-1.png" alt="" class="feature_icon_1">
-        <img src="img/animate_icon/shape.png" alt="" class="feature_icon_4">
-    </section>
-    <!-- about_us part end-->
 
-    <!-- pricing part start-->
-    <section class="pricing_part mb_130 home_page_pricing">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section_tittle text-center">
-                        <h2>Simple Pricing</h2>
-                        <p>Life firmament under them evening make after called dont
-                            saying likeness isn't wherein also forth she'd air two without</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single_pricing_part">
-                        <img src="img/icon/feature_icon_1.png" alt="">
-                        <p>business</p>
-                        <h3>$50.00 <span>/ mo</span></h3>
-                        <ul>
-                            <li>2GB Bandwidth</li>
-                            <li>Two Account</li>
-                            <li>15GB Storage</li>
-                            <li>Sale After Service</li>
-                            <li>3 Host Domain</li>
-                            <li>24/7 Support</li>
-                        </ul>
-                        <a href="#" class="btn_1">Choose Plane</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single_pricing_part">
-                        <img src="img/icon/feature_icon_2.png" alt="">
-                        <p>business</p>
-                        <h3>$60.00 <span>/ mo</span></h3>
-                        <ul>
-                            <li>2GB Bandwidth</li>
-                            <li>Two Account</li>
-                            <li>15GB Storage</li>
-                            <li>Sale After Service</li>
-                            <li>3 Host Domain</li>
-                            <li>24/7 Support</li>
-                        </ul>
-                        <a href="#" class="btn_1">Choose Plane</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single_pricing_part">
-                        <img src="img/icon/feature_icon_3.png" alt="">
-                        <p>business</p>
-                        <h3>$80.00 <span>/ mo</span></h3>
-                        <ul>
-                            <li>2GB Bandwidth</li>
-                            <li>Two Account</li>
-                            <li>15GB Storage</li>
-                            <li>Sale After Service</li>
-                            <li>3 Host Domain</li>
-                            <li>24/7 Support</li>
-                        </ul>
-                        <a href="#" class="btn_1">Choose Plane</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="img/left_sharp.png" alt="" class="left_shape_1">
-        <img src="img/animate_icon/Shape-1.png" alt="" class="feature_icon_1">
-        <img src="img/animate_icon/shape.png" alt="" class="feature_icon_4">
-    </section>
-    <!-- pricing part end-->
 
-    <!-- cta part start-->
-    <section class="cta_part section_padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 col-xl-6">
-                    <div class="cta_text text-center">
-                        <h2>Very useful Friendly</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo</p>
-                        <a href="#" class="btn_2 banner_btn_1">Get Started </a>
-                        <a href="#" class="btn_2 banner_btn_2">Sign up for free </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- cta part end-->
-
-    <!--::footer_part start::-->
-    <footer class="footer_part">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-lg-3">
-                    <div class="single_footer_part">
-                        <a href="index.html" class="footer_logo_iner"> <img src="img/footer_logo.png" alt="#"> </a>
-                        <h4>About Us</h4>
-                        <p>Heaven fruitful doesn't over lesser days appear creeping seasons so behold bearing days open
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="single_footer_part">
-                        <h4>Contact Info</h4>
-                        <p>Address : Your address goes
-                            here, your demo address.
-                            Bsngladesh.</p>
-                        <p>Phone : +8880 44338899</p>
-                        <p>Email : info@colorlib.com</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="single_footer_part">
-                        <h4>Important Link</h4>
-                        <ul class="list-unstyled">
-                            <li><a href=""> WHMCS-bridge</a></li>
-                            <li><a href="">Search Domain</a></li>
-                            <li><a href="">My Account</a></li>
-                            <li><a href="">Shopping Cart</a></li>
-                            <li><a href="">Our Shop</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="single_footer_part">
-                        <h4>Newsletter</h4>
-                        <p>Heaven fruitful doesn't over lesser in days. Appear creeping seasons deve behold bearing days
-                            open
-                        </p>
-                        <div id="mc_embed_signup">
-                            <form target="_blank"
-                                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                                method="get" class="subscribe_form relative mail_part">
-                                <input type="email" name="email" id="newsletter-form-email" placeholder="Email Address"
-                                    class="placeholder hide-on-focus" onfocus="this.placeholder = ''"
-                                    onblur="this.placeholder = ' Email Address '">
-                                <button type="submit" name="submit" id="newsletter-submit"
-                                    class="email_icon newsletter-submit button-contactForm"><i
-                                        class="far fa-paper-plane"></i></button>
-                                <div class="mt-10 info"></div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="copyright_text">
-                        <P><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></P>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="footer_icon social_icon">
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="single_social_icon"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#" class="single_social_icon"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#" class="single_social_icon"><i class="fas fa-globe"></i></a></li>
-                            <li><a href="#" class="single_social_icon"><i class="fab fa-behance"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
     <!--::footer_part end::-->
 
     <!-- jquery plugins here-->
