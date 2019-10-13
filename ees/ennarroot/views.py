@@ -60,8 +60,21 @@ def productUpload(request):
 
         return HttpResponseRedirect(reverse('ennarroot:home'))
 
+
+
 def uploadForm(request):
     return render(request,'product.html',context=None)
+
+
+def viewProducts(request):
+    products = Products.objects.all()
+    dict={'products':products}
+    return render(request,'viewproduct.html',context=dict)
+
+
+
+
+
 
 def toUpper(name):
      index=0

@@ -9,7 +9,8 @@ urlpatterns = [
     path('admin_desk/',views.adminDesk,name='admin_desk'),
     path('logout/',views.logout,name='logout'),
     path('upload_product/',views.uploadForm,name='productupload'),
-    path('upload/',views.productUpload,name='upload')
+    path('upload/',views.productUpload,name='upload'),
+    path('view_products/',views.viewProducts,name='viewproducts')
 
 
 ]
