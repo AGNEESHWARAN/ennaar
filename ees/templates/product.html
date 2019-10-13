@@ -26,7 +26,12 @@
                     <img src="{% static "ennarroot/product/images/Untitled-1.jpg"%}" alt="">
                 </div>
                 <div class="signup-form">
-                    <form method="POST" class="register-form" id="register-form">
+
+
+
+
+                    <form method="POST" class="register-form" id="register-form" enctype="multipart/form-data" action="{% url 'ennarroot:upload'%}">
+                      {% csrf_token %}
                         <h2>UPLOAD PRODUCT</h2>
                         <div class="form-row">
                             <div class="form-group">
@@ -45,7 +50,7 @@
                         <div class="form-group">
                           <label for="course">Fuel</label>
                           <div class="form-select">
-                              <select name="model_series" id="model_series">
+                              <select name="fuel" id="model_series">
                                   <option value="">--Choose your Fuel--</option>
                                   <option value="m1">Bagasse</option>
                                   <option value="m2">Coal</option>
