@@ -34,17 +34,27 @@
             </header>
 
             <!-- First Photo Grid-->
+
+
+            {% for product  in products  %}
+
+
             <div class="w3-row-padding">
+
+
+
                 <div class="w3-third w3-container w3-margin-bottom">
                     <img src="{{product.product_image}}" alt="Norway" style="width:100%" class="w3-hover-opacity">
                     <div class="w3-container w3-white">
                         <h3>{{product.productname}}</h3>
                         <h3>{{product.capacity}}</h3>
                         <h3>{{product.workingpressure}}</h3>
-                        <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                        <h3>{{product.fuel}}</h3>
+                        <h3>{{product.model_series}}</h3>
+                        
                     </div>
 
-
+                    {% endfor %}
                     <!-- End page content -->
                 </div>
 

@@ -10,7 +10,9 @@ urlpatterns = [
     path('logout/',views.logout,name='logout'),
     path('upload_product/',views.uploadForm,name='productupload'),
     path('upload/',views.productUpload,name='upload'),
-    path('view_products/',views.viewProducts,name='viewproducts')
+    path('view_products/',views.viewProducts,name='viewproducts'),
+    path('enquiry/',views.enquirey,name='enquiry'),
+    path('save_enq/',views.saveEnquirey,name='save_enq')
 
 
 ]

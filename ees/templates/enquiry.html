@@ -6,26 +6,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--===============================================================================================-->
-    <link rel="icon" type="image/png" href="{% static " ennarroot/enquiry/images/icons/favicon.ico "%}"/>
+    <link rel="icon" type="image/png" href="{% static "ennarroot/enquiry/images/icons/favicon.ico"%}"/>
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="{% static " ennarroot/enquiry/vendor/bootstrap/css/bootstrap.min.css "%}">
+    <link rel="stylesheet" type="text/css" href="{% static "ennarroot/enquiry/vendor/bootstrap/css/bootstrap.min.css"%}">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="{% static " ennarroot/enquiry/fonts/font-awesome-4.7.0/css/font-awesome.min.css "%}">
+    <link rel="stylesheet" type="text/css" href="{% static "ennarroot/enquiry/fonts/font-awesome-4.7.0/css/font-awesome.min.css"%}">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="{% static " ennarroot/enquiry/fonts/Linearicons-Free-v1.0.0/icon-font.min.css "%}">
+    <link rel="stylesheet" type="text/css" href="{% static "ennarroot/enquiry/fonts/Linearicons-Free-v1.0.0/icon-font.min.css"%}">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="{% static " ennarroot/enquiry/vendor/animate/animate.css "%}">
+    <link rel="stylesheet" type="text/css" href="{% static "ennarroot/enquiry/vendor/animate/animate.css"%}">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="{% static " ennarroot/enquiry/vendor/css-hamburgers/hamburgers.min.css "%}">
+    <link rel="stylesheet" type="text/css" href="{% static "ennarroot/enquiry/vendor/css-hamburgers/hamburgers.min.css"%}">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="{% static " ennarroot/enquiry/vendor/animsition/css/animsition.min.css "%}">
+    <link rel="stylesheet" type="text/css" href="{% static "ennarroot/enquiry/vendor/animsition/css/animsition.min.css"%}">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="{% static " ennarroot/enquiry/vendor/select2/select2.min.css "%}">
+    <link rel="stylesheet" type="text/css" href="{% static "ennarroot/enquiry/vendor/select2/select2.min.css"%}">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="{% static " ennarroot/enquiry/vendor/daterangepicker/daterangepicker.css "%}">
+    <link rel="stylesheet" type="text/css" href="{% static "ennarroot/enquiry/vendor/daterangepicker/daterangepicker.css"%}">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="{% static " ennarroot/enquiry/css/util.css "%}">
-    <link rel="stylesheet" type="text/css" href="{% static " ennarroot/enquiry/css/main.css "%}">
+    <link rel="stylesheet" type="text/css" href="{% static "ennarroot/enquiry/css/util.css"%}">
+    <link rel="stylesheet" type="text/css" href="{% static "ennarroot/enquiry/css/main.css"%}">
     <!--===============================================================================================-->
 </head>
 
@@ -34,79 +34,68 @@
     <div class="limiter">
         <div class="container-login100">
             <div class="wrap-login100 p-t-50 p-b-90">
-                <form class="login100-form validate-form flex-sb flex-w">
+                <form class="login100-form validate-form flex-sb flex-w" method="post" action="{%url 'ennarroot:save_enq'%}">
+                  {% csrf_token %}
                     <span class="login100-form-title p-b-51">
 						Servise Enquirey
 					</span>
 
 
                     <div class="wrap-input100 validate-input m-b-16" data-validate="Username is required">
-                        <input class="input100" type="text" name="username" placeholder="Customer Name">
+                        <input class="input100" type="text" name="customer_name" placeholder="Customer Name">
                         <span class="focus-input100"></span>
                     </div>
 
 
                     <div class="wrap-input100 validate-input m-b-16" data-validate="Password is required">
-                        <input class="input100" type="text" name="pass" placeholder="Company Name">
+                        <input class="input100" type="text" name="company_name" placeholder="Company Name">
                         <span class="focus-input100"></span>
                     </div>
 
                     <div class="wrap-input100 validate-input m-b-16" data-validate="Username is required">
-                        <input class="input100" type="text" name="username" placeholder="Boiler Maker's Number  ">
+                        <input class="input100" type="text" name="marker_number" placeholder="Boiler Maker's Number  ">
                         <span class="focus-input100"></span>
                     </div>
 
                     <div class="wrap-input100 validate-input m-b-16" data-validate="Username is required">
-                        <input class="input100" type="text" name="username" placeholder="Commissioning Date">
+                        <input class="input100" type="text" name="date" placeholder="Commissioning Date">
                         <span class="focus-input100"></span>
                     </div>
 
                     <div class="wrap-input100 validate-input m-b-16" data-validate="Username is required">
-                        <input class="input100" type="text" name="username" placeholder="Contact Persion">
+                        <input class="input100" type="text" name="contact_persion" placeholder="Contact Persion">
                         <span class="focus-input100"></span>
                     </div>
 
                     <div class="wrap-input100 validate-input m-b-16" data-validate="Username is required">
-                        <input class="input100" type="text" name="username" placeholder="Mobile Number">
+                        <input class="input100" type="text" name="mobilenumber" placeholder="Mobile Number">
                         <span class="focus-input100"></span>
                     </div>
 
                     <div class="wrap-input100 validate-input m-b-16" data-validate="Username is required">
-                        <input class="input100" type="text" name="username" placeholder="Email">
+                        <input class="input100" type="text" name="email" placeholder="Email">
                         <span class="focus-input100"></span>
                     </div>
 
                     <div class="wrap-input100 validate-input m-b-16" data-validate="Username is required">
-                        <input class="input100" type="text" name="username" placeholder="Address">
+                        <input class="input100" type="text" name="address" placeholder="Address">
                         <span class="focus-input100"></span>
                     </div>
 
                     <div class="wrap-input100 validate-input m-b-16" data-validate="Username is required">
-                        <input class="input100" type="text" name="username" placeholder="Nature of Problem">
+                        <input class="input100" type="text" name="problem" placeholder="Nature of Problem">
                         <span class="focus-input100"></span>
                     </div>
 
 
 
-                    <div class="flex-sb-m w-full p-t-3 p-b-24">
-                        <div class="contact100-form-checkbox">
-                            <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-                            <label class="label-checkbox100" for="ckb1">
-								Remember me
-							</label>
-                        </div>
 
-                        <div>
-                            <a href="#" class="txt1">
-								Forgot?
-							</a>
-                        </div>
-                    </div>
 
                     <div class="container-login100-form-btn m-t-17">
-                        <button class="login100-form-btn">
-							Login
-						</button>
+
+                          <input type="submit" name="Submit" value="submit" class="login100-form-btn">
+
+
                     </div>
 
                 </form>
